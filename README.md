@@ -1,5 +1,5 @@
 # Laravel Benchmark
-Build a simple User Auth with relationships to organizations of which have multiple locations. 
+Build a simple User Auth with relationships to organizations of which have multiple Addresses. 
 The following actions should be available once registered/logged in.
 
 Utilize `laravel/ui` and `php artisan ui vue —auth`  for bootstrapping auth.
@@ -11,10 +11,12 @@ Utilize `laravel/ui` and `php artisan ui vue —auth`  for bootstrapping auth.
     - Email
     - Password
     - Select Organizations
+    - One to Many Addresses
 - Organization CRUD: id, name, timestamps
     - Many to Many Users
-    - One to Many Locations
-- Location CRUD from within organization, organizations.edit: id, street, city, state, zip, timestamps
+    - One to Many Addresses
+- Addresses CRUD from within organization AND user edit views: id, street, city, state, zip, timestamps
+    - Both Organization and User can have addresses, use polymorphism to connect address to either model
 - Bonus: Use seeds/factories to populate the db with all models/relationships.
 
 ### Notes
