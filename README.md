@@ -22,7 +22,7 @@ Utilize `laravel/ui` and `php artisan ui vue —auth`  for bootstrapping auth.
     - Use laravel's service container for dependency injection
 
 ### Notes
-- Don’t spend more than 4 hours.
+- Don’t spend more than 4-5 hours.
 - Only use plain bootstrap classes for simplicity.
 - Not too concerned with look/design. 
     - Reference screen shots in this repo
