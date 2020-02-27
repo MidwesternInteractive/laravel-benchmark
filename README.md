@@ -17,7 +17,9 @@ Utilize `laravel/ui` and `php artisan ui vue —auth`  for bootstrapping auth.
     - One to Many Addresses
 - Addresses CRUD from within organization AND user edit views: id, street, city, state, zip, timestamps
     - Both Organization and User can have addresses, use polymorphism to connect address to either model
-- Bonus: Use seeds/factories to populate the db with all models/relationships.
+- Bonus:
+    - Use seeds/factories to populate the db with all models/relationships.
+    - Use laravel's service container for dependency injection
 
 ### Notes
 - Don’t spend more than 4 hours.
